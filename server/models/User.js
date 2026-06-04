@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+// Add a user model with authentication and subscription fields
+
 const userSchema = new mongoose.Schema(
     {
         name: { type: String, required: true, trim: true },
