@@ -22,6 +22,8 @@ const competitorSchema = new mongoose.Schema(
     { _id: false }
 );
 
+//Add keyword tracking model for SEO rank monitoring
+
 const keywordTrackingSchema = new mongoose.Schema(
     {
         userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
