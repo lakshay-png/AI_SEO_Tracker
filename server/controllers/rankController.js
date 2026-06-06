@@ -1,6 +1,7 @@
 import KeywordTracking from "../models/keywordTracking.js";
 import { keywordTracking } from "../services/keywordTrackingSevice.js";
 
+//implementing controller methods or CRUD operations
 // Add a keyword to track
 export const addKeyword = async (req, res) => {
     try {
