@@ -9,7 +9,8 @@ const bb = new Browserbase({
 export async function rankTracker(keyword, targetDomain) {
     let browser;
     try {
-        // 1. Initialize Browserbase Session & Connect Playwright
+        // 1. Initialize Browserbase Session
+        // connect playwright
         const session = await bb.sessions.create({ browserSettings: { blockAds: true } });
         browser = await chromium.connectOverCDP(session.connectUrl);
         const page = browser.contexts()[0].pages()[0];
