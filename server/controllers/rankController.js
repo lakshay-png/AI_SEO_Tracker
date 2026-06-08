@@ -66,7 +66,7 @@ export const getKeyword = async (req, res) => {
     }
 };
 
-// Manually refresh a keyword ranking
+// manually refresh a keyword rank
 export const refreshKeyword = async (req, res) => {
     try {
         const tracking = await KeywordTracking.findOne({ _id: req.params.id, userId: req.userId });
