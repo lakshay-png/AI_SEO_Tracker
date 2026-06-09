@@ -31,7 +31,8 @@ export async function rankTracker(keyword, targetDomain) {
 
         const cleanTarget = targetDomain.replace("www.", "").toLowerCase();
 
-        // 3. Search Loop: Iterate through up to 5 pages of Google results
+        // 3. Search Loop
+        // Itrate through upto 5 pages of google search result
         for (let gPage = 0; gPage < 5; gPage++) {
             await page.goto(`https://www.google.com/search?q=${encodeURIComponent(keyword)}&start=${gPage * 10}&num=10&hl=en&gl=us`, { waitUntil: "networkidle" });
 
