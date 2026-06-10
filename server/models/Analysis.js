@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// add analysis model
 const issueSchema = new mongoose.Schema(
     {
         severity: { type: String, enum: ["critical", "warning", "info"], required: true },
