@@ -44,6 +44,7 @@ const analysisSchema = new mongoose.Schema(
             h6: { type: Number, default: 0 },
             h1Texts: [String],
         },
+        //implement internal, external and broken link metrics
         links: {
             internal: { type: Number, default: 0 },
             external: { type: Number, default: 0 },
