@@ -18,6 +18,7 @@ const analysisSchema = new mongoose.Schema(
         overallScore: { type: Number, min: 0, max: 100, default: 0 },
         categories: {
             seo: { type: Number, default: 0 },
+            //add performance scoring and analysis status workflow
             performance: { type: Number, default: 0 },
             accessibility: { type: Number, default: 0 },
             bestPractices: { type: Number, default: 0 },
