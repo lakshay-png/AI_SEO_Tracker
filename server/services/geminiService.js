@@ -1,5 +1,6 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
+// configure GoogleGenAI client with environment-based API key
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const seoAnalysisSchema = {
