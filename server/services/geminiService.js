@@ -54,6 +54,7 @@ const seoAnalysisSchema = {
 export async function analyzeSeoData(scrapedData) {
     try {
         // adding prompt
+        // generate dynamic SEO audit prompts from scraped website data
         const prompt = `You are an expert SEO analyst. Analyze the following website data and provide a comprehensive SEO audit.
 
         Website URL: ${scrapedData.url}
