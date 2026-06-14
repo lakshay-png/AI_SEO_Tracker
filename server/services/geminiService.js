@@ -29,6 +29,7 @@ const seoAnalysisSchema = {
                 required: ["word", "count", "density"],
             },
         },
+        // implement AI-powered SEO recommendations and issue prioritization
         issues: {
             type: Type.ARRAY,
             items: {
