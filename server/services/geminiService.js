@@ -105,7 +105,7 @@ export async function analyzeSeoData(scrapedData) {
         - Load time: <3s good, <5s ok, >5s poor
         - Page size: <3MB good
         - Must have viewport meta, charset, canonical
-        - OG tags and Twitter cards are very important
+        - OG tags and Twitter cards are important
         - Internal linking is good for SEO
         - Word count: >300 words for content pages
         - Check heading hierarchy
