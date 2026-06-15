@@ -127,6 +127,7 @@ export async function analyzeSeoData(scrapedData) {
 
         return { success: true, data: analysis };
     } catch (error) {
+        //fix: add error handling for Gemini API failures and invalid responses
         console.error("Gemini analysis error:", error.message);
         return { success: false, error: error.message };
     }
