@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// store completed SEO reports in MongoDB
 const rankEntrySchema = new mongoose.Schema(
     {
         date: { type: Date, required: true },
