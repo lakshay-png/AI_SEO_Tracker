@@ -13,6 +13,8 @@ import { Toaster } from "react-hot-toast";
 import { useApp } from "./context/AppContext";
 import Loading from "./components/Loading";
 
+//add rank monitoring dashboard
+
 export default function App() {
     const { user, loading } = useApp();
 
@@ -32,7 +34,6 @@ export default function App() {
                 <Route path="/login" element={user ? <Navigate to="/dashboard" replace /> : <Login state="login" />} />
 
                 <Route path="/register" element={user ? <Navigate to="/dashboard" replace /> : <Login state="register" />} />
-
                 <Route element={<ProtectedRoute />}>
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/analyze" element={<Analyze />} />
