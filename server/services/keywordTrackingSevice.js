@@ -10,7 +10,8 @@ export async function keywordTracking(tracking) {
             if (result.success && result.data.totalResultsScanned > 0) break;
             if (attempt < 2) await new Promise((r) => setTimeout(r, result.success ? 3000 : 5000));
         }
-
+        
+        // display keyword analysis insights
         if (result.success) {
             const prev = tracking.currentPosition;
             const today = new Date();
