@@ -111,7 +111,7 @@ export async function analyzeSeoData(scrapedData) {
         - Check heading hierarchy
 
         Severity levels must be exactly one of: "critical", "warning", or "info".
-        Provide 5-15 issues sorted by severity (critical first). Be specific and actionable with recommendations.
+        Provide 5-14 issues sorted by severity (critical first). Be specific and actionable with recommendations.
         Extract top 10 keywords by frequency from the page content.`;
 
         const response = await ai.models.generateContent({
